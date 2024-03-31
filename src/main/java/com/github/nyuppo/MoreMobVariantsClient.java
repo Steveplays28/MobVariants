@@ -27,7 +27,7 @@ import org.slf4j.LoggerFactory;
 import java.util.Set;
 
 public class MoreMobVariantsClient implements ClientModInitializer {
-    Set<EntityType> validEntities = Set.of(EntityType.CAT, EntityType.CHICKEN, EntityType.COW, EntityType.PIG, EntityType.SHEEP, EntityType.SKELETON, EntityType.SPIDER, EntityType.WOLF, EntityType.ZOMBIE);
+    Set<EntityType<?>> validEntities = Set.of(EntityType.CAT, EntityType.CHICKEN, EntityType.COW, EntityType.PIG, EntityType.SHEEP, EntityType.SKELETON, EntityType.SPIDER, EntityType.WOLF, EntityType.ZOMBIE);
 
     @Override
     public void onInitializeClient() {
